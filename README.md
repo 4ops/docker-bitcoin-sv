@@ -68,7 +68,7 @@ docker-compose version 1.24.0, build 0aa59064
 
 $ mkdir -p my-bitcoin-sv-service-dir && cd $_ # Customize directory name
 
-$ curl -fsSLO https://raw.githubusercontent.com/4ops/bitcoin-sv/master/examples/docker/docker-compose.yml # Download service config
+$ curl -fsSLO https://raw.githubusercontent.com/4ops/docker-bitcoin-sv/master/examples/docker/docker-compose.yml # Download service config
 
 $ vi docker-compose.yml # Customize configuration
 
@@ -92,7 +92,7 @@ Linux CLI example with kubectl:
 ```shell
 $ mkdir -p my-bitcoin-sv-manifests && cd $_ # Customize directory name
 
-$ export BASEURL=https://raw.githubusercontent.com/4ops/bitcoin-sv/master/examples/kubernetes
+$ export BASEURL=https://raw.githubusercontent.com/4ops/docker-bitcoin-sv/master/examples/kubernetes
 
 $ curl -fsSLO "${BASEURL}/secret.yaml" && curl -fsSLO "${BASEURL}/service.yaml" && curl -fsSLO "${BASEURL}/statefulset.yaml" && unset BASEURL # Download statefulset example
 
